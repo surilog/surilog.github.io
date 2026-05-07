@@ -22,9 +22,8 @@
     script.setAttribute('data-input-position', '{{ site.comments.giscus.input_position | default: "top" }}');
     script.setAttribute('data-theme', '{{ site.comments.giscus.theme | default: "light" }}');
     script.setAttribute('data-lang',  '{{ site.comments.giscus.lang | default: "en" }}');
-    {% if site.comments.giscus.lazy %}
-    script.setAttribute('data-loading', 'lazy');
-    {% endif %}
+   
+    
     script.setAttribute('crossorigin', 'anonymous');
 
     script.setAttribute('async', '');
