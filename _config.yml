@@ -87,7 +87,7 @@ google:
 # SEO Related
 google_site_verification :
 bing_site_verification   :
-naver_site_verification  : "6b60c1ac18b2bffbf1b97361325ff62e39c130d4"
+naver_site_verification  : "3e378db0e228fb36ab624521c9c58cfb632908dd"
 yandex_site_verification :
 baidu_site_verification  :
 
@@ -306,11 +306,13 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: default
+      layout: single
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
 date_format: "%y-%m-%d"
