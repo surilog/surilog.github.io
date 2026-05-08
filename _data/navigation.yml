@@ -1,3 +1,4 @@
+#왼쪽 상단바
 main:
   - title: "HOME"
     url: /
@@ -9,3 +10,7 @@ main:
     url: /archives/
   - title: "ABOUT"
     url: /about/
+#오른쪽 위 상단바
+topbar: 
+  - title: ""
+    url: "" 
