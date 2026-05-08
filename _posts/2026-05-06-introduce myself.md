@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "첫 포스팅 입니다. 많이 설레네요!."
+title: "보안부터 자기개발까지, surilog의 성장 기록을 시작합니다."
 sidebar:
     nav: "main"
 
@@ -17,21 +17,12 @@ comments: true
 
 
 
-## 오늘 처음 저의 보안 공부 과정과 일상을 공유하고자 블로그를 만들었어요.
+<h2> 안녕하세요! surilog 블로그를 운영하게 된 suri입니다.</h2>
 
+이곳은 단순히 기술만 나열하는 공간이 아니라, 보안 전문가로 성장해가는 과정과 
+그 과정에서 마주하는 다양한 일상, 그리고 미래를 위한 경제적 기반을 닦는 모습까지 저라는 사람의 성장 엔진을 기록하는 곳입니다.
 
-### 열심히 하겠습니다.
+제 비전이나 더 자세한 이력이 궁금하신 분들은 아래 버튼을 확인해 주세요!
 
-
-![Surilog](/images/profile.png)
-
-```python
-# 두 수를 더하는 함수 정의
-def add(a, b):
-    return a + b
-
-result = add(10, 20)
-print(result) # 출력: 30
-```
-
-앞으로 열심히 해보겠습니다.
+{: .btn .btn--info .btn--large}
+[surilog 자세히 알아보기 (ABOUT)](/about/){: .btn .btn--info .btn--large}
