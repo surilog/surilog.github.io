@@ -3,8 +3,8 @@ layout: single
 title: "첫 포스팅 입니다. 많이 설레네요!."
 sidebar:
     nav: "main"
-categories: wargame
-tag : [python,jekyll]
+
+tag : [소개,blog]
 toc : true
 toc_sticky: true
 toc_label: "Contents"
@@ -12,9 +12,9 @@ author_profile: true
 search: false
 comments: true
 ---
+<!-- categories: wargame -->
 
 
-[버튼입니다](https://google.com){: .btn .btn--danger}
 
 
 ## 오늘 처음 저의 보안 공부 과정과 일상을 공유하고자 블로그를 만들었어요.
