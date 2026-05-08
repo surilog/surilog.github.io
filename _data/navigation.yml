@@ -7,7 +7,7 @@ main:
   - title: "TAGS"
     url: /tags/
   - title: "By Year"
-    url: /year-archivs/
+    url: /year-archive/
   - title: "ABOUT"
     url: /about/
 #오른쪽 위 상단바
