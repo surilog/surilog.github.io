@@ -7,3 +7,18 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* 상단 바의 일반 메뉴 글자들은 숨기기 */
+.masthead__menu-item {
+  display: none !important;
+}
+
+/* 검색 아이콘이 포함된 항목만 강제로 다시 보이기 */
+.masthead__menu-item--search {
+  display: inline-block !important;
+}
+
+/* 검색 아이콘 색상이 배경에 묻힌다면 흰색으로 고정 (선택 사항) */
+.masthead__menu-item--search i {
+  color: #fff;
+}

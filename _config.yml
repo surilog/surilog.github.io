@@ -310,6 +310,10 @@
         author_profile: true
         sidebar:
            nav: "main" # 위에서 만든 main 메뉴를 사이드바에 띄우겠다는 설정
+        toc: true
+        toc_sticky: true      # 스크롤 시 목차가 화면에 고정되어 따라옴
+        toc_label: "Contents" # 목차 상단에 표시될 이름 (스크린샷과 동일하게 설정)
+        toc_icon: "cog"       # (선택 사항) 목차 제목 옆에 붙을 아이콘
         read_time: true
         comments: true
         share: false
