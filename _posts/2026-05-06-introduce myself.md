@@ -27,6 +27,8 @@ comments: true
 
 # 오늘 처음 저의 보안 공부 과정과 일상을 공유하고자 블로그를 만들었어요.
 
+## 세부 목차
+
 ## 열심히 하겠습니다.
 ![SuriRog](/images/2026-05-06-first-posting/profile.jpg)
 

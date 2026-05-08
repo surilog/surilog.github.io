@@ -23,7 +23,7 @@ subtitle                 :  "시작의 설렘을 로그의 가치로"
 name                     : "Surilog"
 description              : "Surilog의 블로그 입니다."
 url                      : "https://Surilog.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"""
+baseurl                  : "" # the subpath of your site, e.g. "/blog""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/profile.png"
@@ -50,7 +50,7 @@ comments:
   giscus:
     repo                 : Surilog/Surilog.github.io
     repo_id              : R_kgDOMOd52A # Shown during giscus setup at https://giscus.app
-    category             : General  
+    category             : General
     category_name        : General # Full text name of the category
     category_id          : DIC_kwDOMOd52M4C8gEg # Shown during giscus setup at https://giscus.app
     mapping              : pathname
