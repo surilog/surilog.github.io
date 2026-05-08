@@ -8,3 +8,32 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* 1. 상단 바 우측 메뉴 항목을 검색 바 형태로 변형 */
+.masthead__menu-item--search {
+  display: inline-block !important;
+  background-color: rgba(255, 255, 255, 0.1); /* 배경 도형색 (약간 투명한 흰색) */
+  padding: 5px 15px;                          /* 안쪽 여백 */
+  border-radius: 20px;                        /* 둥근 알약 모양 */
+  transition: all 0.3s;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);  /* 테두리 실선 */
+}
+
+/* 2. 마우스를 올렸을 때 효과 */
+.masthead__menu-item--search:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* 3. "Search..." 글자 강제로 집어넣기 */
+.masthead__menu-item--search a::after {
+  content: " Search...";                   /* 아이콘 뒤에 글자 추가 */
+  font-size: 0.9rem;
+  color: #ccc;                              /* 글자 색상 */
+  vertical-align: middle;
+}
+
+/* 4. 돋보기 아이콘 스타일 설정 */
+.masthead__menu-item--search i {
+  color: #ccc;
+  vertical-align: middle;
+}
