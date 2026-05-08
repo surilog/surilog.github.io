@@ -11,9 +11,10 @@ sidebar:
 search: false
 comments: true
 ---
+```
 **[공지사항]**::[Surilog 블로그 신규 업데이트 안내 드립니다.](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 {: .notice--info}
-
+```
 <div class="notice--success">
 <h4>공지사항입니다.</h4>
 <ul>
@@ -26,8 +27,7 @@ comments: true
 [버튼입니다](https://google.com){: .btn .btn--danger}
 
 # 오늘 처음 저의 보안 공부 과정과 일상을 공유하고자 블로그를 만들었어요.
-### 와우!
-## 세부 목차
+
 
 ## 열심히 하겠습니다.
 ![Surilog](/images/2026-05-06-first-posting/profile.jpg)
