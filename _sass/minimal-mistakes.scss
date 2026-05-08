@@ -36,4 +36,26 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
+
+/* 제목 옆의 Permalink 글자와 아이콘 숨기기 */
+.header-link {
+  display: none !important;
+}
+
+/* 또는 특정 클래스로 잡혀있을 경우 */
+.header-link i, 
+.header-link span {
+  display: none !important;
+}
+
+/* 제목 마우스 오버 시 나타나는 링크 표시 제거 */
+h1:hover .header-link, 
+h2:hover .header-link, 
+h3:hover .header-link, 
+h4:hover .header-link {
+  opacity: 0 !important;
+}
+
+/*구글 폰트*/
+
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Sunflower:wght@300&display=swap');
