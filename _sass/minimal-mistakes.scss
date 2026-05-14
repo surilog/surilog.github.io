@@ -56,6 +56,47 @@ h4:hover .header-link {
   opacity: 0 !important;
 }
 
+/* 1. TOC 리스트 라인 구분 및 간격 조절 */
+.toc__menu {
+  li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* 항목 간 얇은 선 추가 */
+    padding: 5px 0; /* 위아래 간격 추가 */
+    
+    &:last-child {
+      border-bottom: none; /* 마지막 항목은 선 제거 */
+    }
+
+    a {
+      display: block;
+      padding: 3px 0;
+      color: rgba(255, 255, 255, 0.7) !important;
+      text-decoration: none !important;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: #ffffff !important;
+        transform: translateX(5px); /* 마우스 올리면 살짝 오른쪽으로 이동 */
+      }
+    }
+  }
+}
+
+/* 2. 현재 위치 강조 (스크롤 시 활성화되는 항목) */
+.toc__menu li.active a {
+  color: #f2ce2b !important; /* 활성화된 목차 색상 (노란색 계열 추천) */
+  font-weight: bold !important;
+}
+
+/* 클릭 시 해당 위치로 부드럽게 이동 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 제목으로 이동했을 때 상단 메뉴바에 가려지지 않도록 여백 조절 */
+h1[id], h2[id], h3[id], h4[id], h5[id], h6[id] {
+  scroll-margin-top: 80px; 
+}
+
 /*구글 폰트*/
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Sunflower:wght@300&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');

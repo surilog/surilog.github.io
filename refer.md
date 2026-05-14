@@ -16,7 +16,7 @@ comments: true
 **[공지사항]**::[Surilog 블로그 신규 업데이트 안내 드립니다.](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
 {: .notice--info}
 
-<div class="notice--success">
+<div class="notice--success">  #형광펜 기능
 <h4>공지사항입니다.</h4>
 <ul>
     <li>공지사항 순서 1</li>

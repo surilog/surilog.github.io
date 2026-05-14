@@ -40,13 +40,34 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {% if page.toc %}
-          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
-            <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=false %}
-            </nav>
-          </aside>
+  {% if page.toc %}
+    <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+      
+      <nav class="toc" style="margin-bottom: 1em; border: 1px solid #f2f3f3; padding: 1em; border-radius: 4px; position: static !important;">
+        <header><h4 class="nav__title" style="margin-top: 0;"><i class="fas fa-file-alt"></i> Recent Posts</h4></header>
+        <ul class="toc__menu" style="list-style: none; margin-left: 0; padding-left: 0;">
+          {% assign count = 0 %}
+          {% for post in site.posts %}
+            {% unless post.url == page.url %}
+              {% if count < 3 %}
+                <li style="margin-bottom: 0.5em;">
+                  <a href="{{ post.url | relative_url }}" style="text-decoration: none;">
+                    <span style="font-size: 0.9em; color: #faf5f5;">{{ post.title }}</span>
+                  </a>
+                </li>
+                {% assign count = count | plus: 1 %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <nav class="toc">
+        <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label | default: "On this page" }}</h4></header>
+        {% include toc.html sanitize=true html=page.content h_min=page.toc_min h_max=page.toc_max class="toc__menu" %}
+      </nav>
+
+    </aside>
         {% endif %}
         {{ content }}
         {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

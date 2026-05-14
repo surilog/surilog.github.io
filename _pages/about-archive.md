@@ -16,7 +16,7 @@ sidebar_main: true
 * 꾸준한 기술 블로그 포스팅을 통한 지식 공유
 
 ## 🛠 Tech Stack
-* **Language:** Python, C, Javascript
+* **Language:** Python, C, linux
 * **Security:** Web Hacking (Dreamhack), Exploit Writing
 * **DevOps:** GitHub Codespaces, Jekyll
 
