@@ -250,7 +250,7 @@ Options +Indexes
 
 기존 파일에 선언되어 있던 위험한 접근 허용 구문을 지우고, 다음과 같이 **특정 확장자의 접근 및 실행을 원천 차단하는 방어 구문**으로 수정했습니다.
 
-```Apache
+```apache
 # 전역/기본 설정 (그대로 유지)
 AddType application/x-httpd-php .php .phtml .php3 .php4 .php5 .inc
 Options +Indexes
