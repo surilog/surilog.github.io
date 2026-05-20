@@ -12,6 +12,7 @@ toc_label: "Contents"
 author_profile: true
 search: true
 comments: true
+published: false
 ---
 
 ##  Dreamhack : Image Uploader 문제를 통해 보는 파일 시그니처 분석의 중요성!
