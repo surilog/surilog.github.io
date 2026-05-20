@@ -12,7 +12,6 @@ toc_label: "Contents"
 author_profile: true
 search: true
 comments: true
-
 ---
 
 ##  Dreamhack : Image Uploader 문제를 통해 보는 파일 시그니처 분석의 중요성!
@@ -194,17 +193,10 @@ if (!in_array($mime_type, $allowed_mimes) ) { # mime타입 먼저 검사
 ### 5-2 : 업로드 디렉터리의 웹 스크립트 실행 권한 제거
 
 소스코드를 수정하는 것 외에도, 웹 서버 환경에서 2중 방어벽을 세우는 '심층 방어'에 대해서도 이야기 해보려고 합니다.
-심층 방어를 활용하게 되면 공격자가 어떤 우회 기법을 써서 악성 PHP 파일을 `uploads/` 폴더에 업로드하는 데 성공하더라도, **그 폴더 안에서 스크립트 엔진이 실행되지 않도록 차단**하면 원격 코드 실행(RCE)을 원천 봉쇄할 수 있습니다.
+심층 방어를 활용하게 되면 공격자가 어떤 우회 기법을 써서 악성 PHP 파일을 폴더에 업로드하는 데 성공하더라도, 
+**그 폴더 안에서 스크립트 엔진이 실행되지 않도록 차단**하면 원격 코드 실행(RCE)을 원천 봉쇄할 수 있습니다.
 
 웹 서버 환경에 따라 아래와 같이 설정을 추가하여 업로드 폴더의 실행 권한을 제거할 수 있습니다.
-
-* **Apache 웹 서버 (`.htaccess` 활용):**
-  `uploads/` 디렉터리 내에 `.htaccess` 파일을 생성하고 아래 설정을 추가하여 PHP 스크립트 핸들러를 무력화합니다.
-  ```apache
-  <FilesMatch "\.(php|php3|php4|php5|phtml|phps)$">
-      Order Allow,Deny
-      Deny from all
-  </FilesMatch>
 
 #### 연계 분석 : 소스코드보다 강력한 '서버 설정'의 중요성
 {: .no_toc}
@@ -295,3 +287,10 @@ Options +Indexes
 포스팅을 읽기 전, 어떤 문제인지 먼저 도전해 보실 분들을 위해 아래에 드림핵 워게임 링크를 걸어두겠습니다. 
 
 **[Dreamhack - Really NOT SQL 문제 바로가기](https://dreamhack.games/wargame/challenges/2105/)**
+
+### 피드백은 언제나 환영입니다!
+{: .no_toc}
+
+부족한 글이지만 끝까지 읽어주셔서 감사합니다.<br>
+ 포스팅 내용 중 잘못된 정보가 있거나, 더 효율적인 방어 대책이 있다면 언제든지 댓글를 활용해 피드백 부탁드립니다. 
+ <br>여러분의 소중한 의견이 저에게는 큰 배움의 기회가 됩니다!
