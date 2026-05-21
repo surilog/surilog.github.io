@@ -12,7 +12,7 @@ toc_label: "Contents"
 author_profile: true
 search: true
 comments: true
-published: false
+published: true
 ---
 
 ##  Dreamhack : Image Uploader 문제를 통해 보는 파일 시그니처 분석의 중요성!
@@ -93,7 +93,8 @@ if (!in_array($mime_type, $allowed_mimes) && !in_array($check_extension, $allowe
 
 
    먼저 파일 시그니처가 무엇인지 간단하게 소개 하겠습니다.
-   ●파일 시그니처는 파일의 내부 형식을 식별할 수 있게 해주는 **<font color='Cyan'>고유한 바이트 패턴</font>**입니다.
+  
+  ●파일 시그니처는 파일의 내부 형식을 식별할 수 있게 해주는 **<font color='Cyan'>고유한 바이트 패턴</font>**입니다.
 
 ### 3-2 파일 시그니처 구분
 
@@ -224,9 +225,9 @@ if (!in_array($mime_type, $allowed_mimes) ) { # mime타입 먼저 검사
 
 사실 제가 파일 업로드 기능의 서버 환경 설정을 방어 대책으로 강조하는 이유는, 최근 드림핵의 **<font color='Cyan'>Really NOT SQL</font>** 문제를 해결하며 **<font color='Cyan'>서버 설정 오류</font>**가 가져오는 치명적인 위험성에 대해 공부를 했기 때문입니다.
 
-Really NOT SQL 문제의 경우, 애플리케이션(PHP) 측면에서는 세션을 철저하게 검증하여(Login/Edit Profile)을 수행하고 있었습니다.
+Really NOT SQL 문제의 경우, 애플리케이션(PHP) 측면에서는 세션을 철저하게 검증하고 있었습니다.
 
-하지만 다음과 같이 **<font color='Cyan'>서버 설정 측면</font>**에서의 서버 설정의 suri가 필요했었습니다.
+하지만 다음과 같이 **<font color='Cyan'>서버 설정 측면</font>**에서의 suri가 필요했었습니다.
 
 #### Really NOT SQL의 기본 서버 설정
 {: .no_toc}
