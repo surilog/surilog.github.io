@@ -12,7 +12,7 @@ toc_label: "Contents"
 author_profile: true
 search: true
 comments: true
-published: false
+published: true
 ---
 
 <div class="notice--success">  
