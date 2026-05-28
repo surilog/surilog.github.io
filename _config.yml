@@ -124,7 +124,7 @@
     links:
       - label: "Email"
         icon: "fas fa-fw fa-envelope-square"
-        url: "mailto:surilog@email.com"
+        url: "mailto:surilogblog@gmail.com"
       - label: "Website"
         icon: "fas fa-fw fa-link"
         #url: "https://your-website.com"  티스토리 웹사이트넣기
