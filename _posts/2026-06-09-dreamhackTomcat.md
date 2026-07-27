@@ -14,9 +14,9 @@ comments: true
 published: true
 ---
 
-Tomcat 서버 환경에서 소스 코드 검증 미흡으로 발생하는 <font color='#f7356f'>경로 조작 취약점은</font>, 단순한 파일 노출을 넘어 서버 전체의 제어권을 넘겨주는 치명적인 공격 체인의 시발점이 될 수 있습니다.
+안녕하세요! 오늘은 Dreamhack의 **Tomcat Manager** 문제를 통해 **Path Traversal(경로 조작) 취약점**의 원리를 이해하고, 이를 통해 어떻게 관리자 권한까지 빌드업하여 최종 익스플로잇에 성공할 수 있는지 그 과정을 소개해 보려고 합니다.
 
-오늘은 Dreamhack의 **Tomcat Manager** 문제를 통해 **Path Traversal(경로 조작) 취약점**의 원리를 이해하고, 이를 통해 어떻게 관리자 권한까지 빌드업하여 최종 익스플로잇에 성공할 수 있는지 그 과정을 소개해 보려고 합니다.
+Tomcat 서버 환경에서 소스 코드 검증 미흡으로 발생하는 <font color='#f7356f'>경로 조작 취약점은</font>, 단순한 파일 노출을 넘어 서버 전체의 제어권을 넘겨주는 치명적인 공격 체인의 시발점이 될 수 있습니다.
 
 > **Dreamhack - Tomcat Manager 문제 바로가기**
 > [드림핵 공식 워게임 챌린지 링크](https://dreamhack.io/wargame/challenges/248)

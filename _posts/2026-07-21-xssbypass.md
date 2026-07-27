@@ -28,7 +28,7 @@ published: true
 | 구분 | 링크 안내 |
 | :--- | :--- |
 | **워게임 도전** | [🎯 드림핵 공식 XSS Filtering Bypass Advanced 워게임 챌린지 링크](https://dreamhack.io/wargame/challenges/434) |
-| **관련 강의** | [🎯 드림핵 공식 Switching Command 워게임 챌린지 링크](https://learn.dreamhack.io/318) |
+| **관련 강의** | [🎯 드림핵 공식 XSS Filtering Bypas 강의](https://learn.dreamhack.io/318) |
 
 
 이 문제의 핵심은 주어진 필터링을 우회하여 xss스크립트를 삽입하는 것입니다.<br>
@@ -332,4 +332,6 @@ def flag():
 
 이번 드림핵의 XSS Filtering Bypass Advanced 문제는 자바스크립트의 문법적 특성을 활용해 블랙리스트 필터링을 우회하고, 상황에 맞는 페이로드를 설계해 보는 재미가 있었던 문제였습니다.<br>
 
-공격 기법 분석에서 그치지 않고 HTML 엔티티 이스케이프와 HttpOnly 쿠키 설정을 통한 시큐어 코딩 기법까지 직접 정리해 보면서, XSS 취약점의 공격과 방어 메커니즘을 전반적으로 깊이 있게 이해할 수 있었습니다.
+공격 기법 분석에서 그치지 않고 HTML 엔티티 이스케이프와 HttpOnly 쿠키 설정을 통한 시큐어 코딩 기법까지 직접 정리해 보면서, XSS 취약점의 공격과 방어 메커니즘을 전반적으로 깊이 있게 이해할 수 있었습니다.<br>
+
+**긴 글 읽어주셔서 감사합니다!**
