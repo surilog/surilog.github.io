@@ -11,7 +11,7 @@ toc_label: "Contents"
 author_profile: true
 search: true
 comments: true
-published: false
+published: true
 ---
 
 <div class="notice--success">  
@@ -27,8 +27,8 @@ published: false
 
 | 구분 | 링크 안내 |
 | :--- | :--- |
-| **워게임 도전** | [🎯 드림핵 공식 CSP Bypass Advanced 워게임 챌린지 링크](https://dreamhack.io/wargame/challenges/436) |
-| **관련 강의** | [🎯 드림핵 공식 CSP 강의 링크](https://learn.dreamhack.io/321) |
+| **워게임 도전** | [ 드림핵 공식 CSP Bypass Advanced 워게임 챌린지 링크](https://dreamhack.io/wargame/challenges/436) |
+| **관련 강의** | [ 드림핵 공식 CSP 강의 링크](https://learn.dreamhack.io/321) |
 
 이 문제의 핵심은 CSP의 인라인 코드 보안 정책을 뚫고 스크립트를 실행하는 것입니다.<br>
 
