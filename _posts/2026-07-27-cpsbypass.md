@@ -23,12 +23,12 @@ published: true
 
 문제를 풀기 전, 제가 스스로 취약점을 분석하고 공격 로직을 세우기 위해 디딤돌로 삼았던 드림핵 공식 학습 링크와 챌린지 주소를 아래에 공유합니다.<br>
 
-## 🔗 주요 관련 링크 바로가기
+##  주요 관련 링크 바로가기
 
 | 구분 | 링크 안내 |
 | :--- | :--- |
-| **워게임 도전** | [🎯 드림핵 공식 CSP Bypass 워게임 챌린지 링크](https://dreamhack.io/wargame/challenges/435) |
-| **관련 강의** | [🎯 드림핵 공식 CSP 강의 링크](https://learn.dreamhack.io/321) |
+| **워게임 도전** | [ 드림핵 공식 CSP Bypass 워게임 챌린지 링크](https://dreamhack.io/wargame/challenges/435) |
+| **관련 강의** | [ 드림핵 공식 CSP 강의 링크](https://learn.dreamhack.io/321) |
 
 이 문제의 핵심은 CSP의 인라인 코드 보안 정책을 뚫고 스크립트를 실행하는 것입니다.<br>
 

@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Dreamhack CSP Bypass를 통해 공부하는 콘텐츠 보안 정책'
+title: 'Dreamhack CSP Bypass Advanced를 통해 공부하는 콘텐츠 보안 정책'
 sidebar:
     nav: "main"
 tag : [dreamhack, web, 웹 해킹, exploit, xss, csp, src, base]
