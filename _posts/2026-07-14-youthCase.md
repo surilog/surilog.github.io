@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Dreamhack Switching Command를 통해 배우는 PHP의 엄격한 일치 연산자'
+title: 'Dreamhack youthCase를 통해 배우는 서버의 파싱 차이 취약점'
 sidebar:
     nav: "main"
 tag : [dreamhack, web, 웹 해킹, exploit, nginx, express, nodejs]
