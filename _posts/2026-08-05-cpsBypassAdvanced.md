@@ -43,6 +43,8 @@ def add_header(response):
     nonce = os.urandom(16).hex()
     return response
 ```
+
+
 add_header()함수는 콘텐츠 보안 정책을 설정하는 함수로 다음과 같습니다.
 <div class="notice--info"> 
 "default-src 'self' : -src 속성으로 끝나는 모든 지시문은 같은 출처 내에서 로드하는 리소스만 허용합니다.<br>
@@ -51,7 +53,7 @@ style-src 'self' 'unsafe-inline' : 스타일시트 또한 같은 출처 내에�
 script-src 'self' 'nonce-{nonce}' : 스크립트 시트 또한 같은 출처 내에서 로드하는 리소스만 허용하면서 예외적으로 nonce속성을 설정하여 인라인 코드를 허용합니다.<br>
 object-src 'none' : 모든 출처를 허용하지 않습니다.<br>
 여기서 한 가지 주의깊게 볼 점은 base-uri 지시문이 미 설정 되어있다는 것입니다.<br>
-<div>
+</div>
 
 @app.route("/vuln")
 ```python
