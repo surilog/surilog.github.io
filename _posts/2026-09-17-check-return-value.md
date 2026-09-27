@@ -21,7 +21,7 @@ published: false
 ---
 
 <div style="text-align: center; margin: 20px 0;">
-  <img src="{{ '/images/study.jpg' | relative_url }}" 
+  <img src="{{ '/images/check-return-value/study.jpg' | relative_url }}" 
        alt="필기 노트" 
        style="max-width: 80%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
   <p style="font-size: 0.9em; color: #666;">[접근방법]</p>
