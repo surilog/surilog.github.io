@@ -18,6 +18,13 @@ published: false
 본 포스팅은 Dreamhack의 simple-crack-me2 워게임 문제를 분석한 기록입니다. 디컴파일 및 리버스 엔지니어링을 통해 암호화 루틴을 파악하고, 역산(Bottom-Up) 알고리즘을 설계하여 C++ 복호화 스크립트를 작성한 과정을 다룹니다. (드림핵 가이드라인을 준수하여 FLAG 직접 노출은 지양하고 핵심 연산 분석 위주로 정리했습니다.)
 </div>
 
+<div style="text-align: center; margin: 20px 0;">
+  <img src="{{ '/images/simple_crack_me2/note1.jpg' | relative_url }}" 
+       alt="필기 노트" 
+       style="max-width: 80%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+  <p style="font-size: 0.9em; color: #666;">[손으로 직접 작성해 본 역산 필기 노트]</p>
+</div>
+
 # [Dreamhack] simple-crack-me2 문제 분석 및 디코딩 노트
 
 ## 1. 개요 및 분석 접근법
