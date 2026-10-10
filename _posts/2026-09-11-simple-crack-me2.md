@@ -22,7 +22,7 @@ published: false
   <img src="{{ '/images/simple_crack_me2/note1.jpg' | relative_url }}" 
        alt="필기 노트" 
        style="max-width: 80%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
-  <p style="font-size: 0.9em; color: #666;">[손으로 직접 작성해 본 역산 필기 노트]</p>
+  <p style="font-size: 0.9em; color: #666;">[ 필기 노트]</p>
 </div>
 
 # [Dreamhack] simple-crack-me2 문제 분석 및 디코딩 노트
