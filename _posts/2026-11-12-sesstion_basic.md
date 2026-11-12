@@ -83,20 +83,36 @@ def index():
 
 **1) `/admin`에서 admin 세션 ID 확인**
 
-![/admin 라우터에서 전체 session_storage를 확인한 화면](images/sesstion_basic/session-basic-01-admin-route.png)
+<div style="text-align: center; margin: 20px 0;">
+  <img src="{{ '/images/session_basic/note1.png' | relative_url }}" 
+       alt="/admin 라우터에서 전체 session_storage를 확인한 화면" 
+       style="max-width: 80%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+  <p style="font-size: 0.9em; color: #666;">[/admin 라우터에서 전체 session_storage를 확인한 화면]</p>
+</div>
+
 
 - 로그인하지 않은 상태로 `/admin`에 접속하면 서버의 `session_storage` 딕셔너리 전체가 JSON으로 그대로 노출된다.
 - 그중 `"...e925e5b7": "admin"`으로 되어 있는 키가 admin의 세션 ID다.
 
 **2) guest로 로그인해 쿠키 구조 확인**
 
-![guest로 로그인한 뒤 sessionid 쿠키를 확인한 화면](images/session-basic-02-guest-login.png)
+<div style="text-align: center; margin: 20px 0;">
+  <img src="{{ '/images/session_basic/note1.png' | relative_url }}" 
+       alt="guest로 로그인한 뒤 sessionid 쿠키를 확인한 화면" 
+       style="max-width: 80%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+  <p style="font-size: 0.9em; color: #666;">[guest로 로그인한 뒤 sessionid 쿠키를 확인한 화면]</p>
+</div>
 
 - `guest/guest`로 로그인한 뒤 개발자 도구 → 애플리케이션 → 쿠키에서 `sessionid`라는 이름으로 세션이 저장되는 걸 확인했다. "아직 admin이 아니다"라는 응답도 함께 확인했다.
 
 **3) 쿠키 값을 admin 세션 ID로 교체**
 
-![sessionid 쿠키를 admin 값으로 바꾼 뒤 플래그를 획득한 화면](images/session-basic-03-flag.png)
+<div style="text-align: center; margin: 20px 0;">
+  <img src="{{ '/images/session_basic/note1.png' | relative_url }}" 
+       alt="sessionid 쿠키를 admin 값으로 바꾼 뒤 플래그를 획득한 화면" 
+       style="max-width: 80%; height: auto; border: 1px solid #ddd; border-radius: 5px;">
+  <p style="font-size: 0.9em; color: #666;">[sessionid 쿠키를 admin 값으로 바꾼 뒤 플래그를 획득한 화면]</p>
+</div>
 
 - 기존 `sessionid` 쿠키의 값을 1)에서 확인한 admin 세션 ID로 **덮어쓰고** `/`로 다시 접속하니 `Hello admin, flag is ...`가 출력됐다.
 
