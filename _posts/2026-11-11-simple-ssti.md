@@ -1,10 +1,10 @@
 ---
 layout: single
-title: '[Dreamhack] simple-crack-me2 역산 알고리즘 분석 및 C++ 디코더 구현'
+title: '[Dreamhack] simple-ssti 풀이 및 Jinja2 템플릿 인젝션 취약점 분석'
 sidebar:
     nav: "main"
-tag : [Reversing, System, Assembly, x86-64, Dreamhack, XOR, ReversingCode]
-categories: [System, CS]
+tag : [Dreamhack, WebHacking, SSRF, PortScanning, Python, Security, Writeup]
+categories: [Web, Wargame]
 toc : true
 toc_sticky: true
 toc_label: "Contents"
@@ -15,7 +15,8 @@ published: false
 ---
 
 <div class="notice--info">  
-본 포스팅은 Dreamhack의 simple-crack-me2 워게임 문제를 분석한 기록입니다. 디컴파일 및 리버스 엔지니어링을 통해 암호화 루틴을 파악하고, 역산(Bottom-Up) 알고리즘을 설계하여 C++ 복호화 스크립트를 작성한 과정을 다룹니다. (드림핵 가이드라인을 준수하여 FLAG 직접 노출은 지양하고 핵심 연산 분석 위주로 정리했습니다.)
+본 포스팅은 Dreamhack의 simple_ssrf 워게임 문제를 분석한 기록입니다. (드림핵 가이드라인을 준수하여 FLAG 직접 노출은 지양하고 핵심 분석 위주로 정리했습니다.)
+
 </div>
 
 <div style="text-align: center; margin: 20px 0;">
